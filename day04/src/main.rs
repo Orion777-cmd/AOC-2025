@@ -12,7 +12,7 @@ fn main() {
     let res = iterative_dfs(0, 0, &mut seen, &grid);
 
     println!("Result is {res}");
-    
+
     let mut modified_grid = grid.clone();
     let mut res_two = 0;
 
@@ -128,7 +128,6 @@ fn iterative_dfs_two(
                 }
             }
 
-            // if neighboring papers < 4, increment res and change cell to '.'
             if papers < 4 {
                 res += 1;
                 grid[i][j] = '.';
