@@ -81,7 +81,7 @@ fn part_one(lines: &Vec<String>) -> i64 {
             }
         }
     }
-    
+
     res
 
 }
